@@ -1,0 +1,311 @@
+/* CSS Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #078f2d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img {
+    width: 150px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 174px; 
+    background-color: #040404;
+    padding: 20px;
+    height: calc(100vh - 60px); 
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #078f2d;
+}
+
+footer {
+    background-color: #078f2d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-left: 220px; 
+    padding: 174px 20px 20px 20px; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper > .container {
+    flex: 1;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px; 
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+/* Específicos */
+.highlight {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.faq-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.faq + .answer {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.faq-item .faq {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.faq-item .faq:hover {
+    background-color: #e0e0e0;
+}
+
+.cadastro-form label {
+    display: inline-block;
+    width: 150px; 
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="tel"],
+.cadastro-form select {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.cadastro-form input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.cadastro-form .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cadastro-form button {
+    display: block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #078f2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cadastro-form button:hover {
+    background-color: #066b25;
+}
+
+.simulacao-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.simulacao-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.simulacao-form .form-group label {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.simulacao-form .form-group select {
+    width: 200px;
+    padding: 8px;
+}
+
+.simulacao-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #078f2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.simulacao-form button:hover {
+    background-color: #066b25;
+}
+
+.simulacao-form #resultado {
+    margin-top: 20px;
+}
+
+.banner {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+.home-cards-container {
+    display: flex;
+    gap: 20px; 
+}
+
+.home-cards-container .card {
+    position: relative; 
+    flex: 1;
+    min-width: 200px; 
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    text-align: center;
+}
+
+.card-logo {
+    position: absolute; 
+    top: 10px;  
+    left: 10px; 
+    width: 50px; 
+    height: auto; 
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p a {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px; 
+    margin-left: 5px;
+}
+
+footer p a:hover {
+    color: #f1f0f0; 
+}
+
+.promo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.promo-image {
+    width: 150px; 
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.promo-text {
+    flex: 1;
+}
+
+.promo-text h2 {
+    margin-top: 0;
+    color: #078f2d; 
+}
+
+.promo-text p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
